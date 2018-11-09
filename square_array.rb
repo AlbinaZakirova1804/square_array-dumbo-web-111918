@@ -6,3 +6,9 @@ def square_array(array)
   new_array
 end
 
+def square_array(array)
+  new_array = []
+  array.collect do {|element| element << element **2}
+  end
+  new_array
+end
